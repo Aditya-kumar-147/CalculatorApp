@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Aleo&family=Mate+SC&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <header>
+    <div class="container" style="height:100px;width:1000px;background-color:#FFEFD9;text-align:center;padding-top:20px">
+    <h1 style="font-family: 'Mate SC', serif;">Calculator</h1>
+    </div>
+    </header>
+    <br><br><br><br><br>
+    <!--form-->
+    <div class="container" style="padding-left:350px;"> 
+        <form action="/send" method="POST" style="font-family: 'Aleo', serif;">
+            <label for="NumberOne" style="font-family: 'Aleo', serif;"><b>First Number</b></label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input 
+            type="text"
+            placeholder="First Number"
+            class="u-full-width"
+            name="num1"
+            /><br><br>
+            <label for="NumberTwo" style="font-family: 'Aleo', serif;"><b>Second Number</b></label>
+            &nbsp<input 
+            type="text"
+            placeholder="Second Number"
+            class="u-full-width"
+            name="num2"
+            /><br><br>
+            <label for="Operation" style="font-family: 'Aleo', serif;"><b>Operation</b></label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select class="u-full-width" name="operation">
+                <option value="add">Add</option>
+                <option value="substract">Substract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+
+            </select><br><br><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Calculate" id="calc_btn" style="font-family: 'Aleo', serif;"/>
+        </form>
+    </div>
+    <div class="container" style="text-align: center;">
+        {{ sum }}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="font-family: 'Mate SC', serif;">
+        <div class="container" style="height:100px;width:1000px;background-color:#FFEFD9;text-align:center;padding-top:20px">
+            <h3>Made by Aditya Kumar</h3>
+            <h3>Incoming SDE at Jhonson Controls</h3>
+
+
+        </div>
+
+
+    </footer>
+</body>
+</html>
